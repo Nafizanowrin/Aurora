@@ -1,0 +1,178 @@
+/* General Section Styling */
+.customers {
+    display: flex;
+    flex-direction: column; /* Stacks content on smaller screens */
+    background: url('/img/back6.jpg') no-repeat center center fixed;
+    padding: 50px 20px; /* Reduced padding for better responsiveness */
+    background-size: cover;
+
+}
+
+/* Title Section */
+.customers_uptitle {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    color: #4e0f21f6;
+    margin-bottom: 10px;
+}
+
+.customers_title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #000000bd;
+    margin-bottom: 40px;
+}
+
+/* Cards Section */
+.cards {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    gap: 20px; /* Adds space between cards */
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* Wrapper for Individual Testimonials */
+.customers_wrapper,
+.customers_wrapper2 {
+    max-width: 400px; /* Adjust max width for smaller screens */
+    flex: 1 1 calc(50% - 20px); /* Ensures two cards per row on medium screens */
+    box-sizing: border-box;
+}
+
+/* Text Sections */
+.customers_text,
+.customers_text2 {
+    margin: 0 auto 20px auto; /* Center aligns text and adds spacing */
+    font-size: 16px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    color: #141414;
+    background-color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center; /* Ensures readability on smaller screens */
+}
+
+/* Customer Card Section */
+.customers_card {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    background-color: #1d0d30b7;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Customer Info Section */
+.customers_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.customers_name {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.customers_citizen {
+    font-size: 14px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-top: 5px;
+}
+
+/* Image Styling */
+.james {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    border-radius: 50%; /* Makes images circular */
+    object-fit: cover; /* Ensures images fit perfectly */
+}
+
+/* Vector Images */
+.customers_vector_wrapper {
+    margin-left: auto; /* Pushes vectors to the far right */
+    display: flex;
+    align-items: center;
+}
+
+.customers_vector {
+    margin-right: 10px;
+    height: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .customers_title {
+        font-size: 28px;
+    }
+
+    .customers_text,
+    .customers_text2 {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .customers_card {
+        padding: 10px 15px;
+        flex-direction: column; /* Stacks content vertically */
+        align-items: center;
+        text-align: center; /* Center-aligns text */
+    }
+
+    .james {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .customers_name,
+    .customers_citizen {
+        text-align: center;
+    }
+
+    .cards {
+        flex-direction: column; /* Stacks all cards vertically */
+    }
+}
+
+@media (max-width: 480px) {
+    .customers {
+        padding: 30px 10px;
+    }
+
+    .customers_title {
+        font-size: 24px;
+    }
+
+    .customers_text,
+    .customers_text2 {
+        font-size: 12px;
+    }
+
+    .james {
+        width: 50px;
+        height: 50px;
+    }
+
+    .customers_name {
+        font-size: 16px;
+    }
+
+    .customers_citizen {
+        font-size: 12px;
+    }
+}

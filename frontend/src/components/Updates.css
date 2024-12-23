@@ -1,0 +1,163 @@
+/* Updates Section */
+.updates {
+  padding: 80px 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/img/gif.gif') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #ffffff; /* Makes text readable on a dark background */
+  text-align: center;
+}
+
+/* Section Title Styling */
+.benefits_uptitle {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  color: #ffd700; /* Highlight color for better visibility */
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.benefits_title {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+/* Blog Items Container */
+.updates_items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center aligns the cards */
+  gap: 30px; /* Uniform spacing between cards */
+}
+
+/* Individual Blog Card */
+.first_item {
+  flex: 1 1 calc(33.333% - 30px); /* Makes cards responsive and maintain a grid layout */
+  max-width: 360px; /* Adds a max-width to keep cards uniform */
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(20px); /* Fade-in effect from below */
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+[data-aos="fade-right"] {
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+}
+
+/* Blog Image */
+.blog_photo {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 5px solid #ffd700; /* Adds a decorative border */
+  transition: transform 0.4s ease;
+}
+
+.blog_photo:hover {
+  transform: scale(1.05); /* Adds a slight zoom-in effect */
+}
+
+/* Blog Information */
+.first_info {
+  padding: 20px;
+  text-align: left;
+}
+
+.data {
+  font-size: 14px;
+  color: #999999;
+  margin-bottom: 8px;
+  font-style: italic;
+}
+
+.first_uptitle {
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.first_title {
+  font-size: 14px;
+  font-family: "Manrope", sans-serif;
+  font-weight: 400;
+  color: #555555;
+  line-height: 1.6;
+}
+
+/* Button Styling */
+.stories {
+  margin: 30px auto 0;
+  padding: 12px 40px;
+  font-size: 16px;
+  font-family: "Manrope", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #5c8692;
+  border: none;
+  border-radius: 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+.stories:hover {
+  background-color: #4a6e78;
+  transform: scale(1.05);
+}
+
+.stories a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .first_item {
+      flex: 1 1 calc(50% - 20px); /* Switch to 2-column layout */
+  }
+
+  .benefits_title {
+      font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .first_item {
+      flex: 1 1 calc(100% - 20px); /* Switch to 1-column layout */
+  }
+
+  .benefits_title {
+      font-size: 28px;
+  }
+
+  .blog_photo {
+      height: 180px; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .benefits_title {
+      font-size: 24px;
+  }
+
+  .first_title {
+      font-size: 12px;
+  }
+
+  .stories {
+      font-size: 14px;
+      padding: 10px 20px;
+  }
+}

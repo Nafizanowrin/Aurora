@@ -1,0 +1,102 @@
+.product-page {
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+    background-color: #f4f4f9;
+    padding: 20px;
+    background: url('/gif.gif') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .product-header {
+    margin-bottom: 20px;
+  }
+  
+  .product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 products per line */
+    gap: 20px; /* Space between the grid items */
+    justify-content: center;
+    width: 75%;
+    margin: 0 auto; /* Center the grid on the page */
+  }
+  
+  .product {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product img {
+    width: 100%;
+    height: 200px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures images fill the space without distortion */
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #ff1493;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pagination button.active {
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+  }
+  
+  .pagination button:hover {
+    background-color: #ff1493;
+    color: #fff;
+  }
+  
+
+  .filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .filters input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+  }
+  
+  .filters select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+  }

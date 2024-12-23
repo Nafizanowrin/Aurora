@@ -1,0 +1,175 @@
+/* Outer Container */
+.inner {
+    position: relative; /* Relative positioning for text overlay */
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+    color: #FFFFFF;
+}
+
+/* Slider Styles */
+.image-slider {
+    width: 100%;
+    height: 100%;
+}
+
+.slider-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; /* Ensures the image covers the container */
+}
+
+/* Text Overlay */
+.text-overlay {
+    position: absolute; /* Position text above the images */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2; /* Ensure the text is above the slider */
+    background: rgba(0, 0, 0, 0.5); /* Darken background for better text visibility */
+    padding: 20px; /* Add padding for smaller screens */
+    box-sizing: border-box;
+}
+
+/* Welcome Text Banner */
+.banner {
+    display: inline-block;
+    background-color: rgba(243, 129, 193, 0.8); /* Semi-transparent pink overlay */
+    padding: 15px 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.banner_text {
+    font-family: 'Manrope', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* Content Styling */
+.info {
+    max-width: 600px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.content {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 400;
+    margin-top: 20px;
+    line-height: 1.2;
+}
+
+.content_text {
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    margin-top: 19px;
+    line-height: 1.6;
+}
+
+/* Button Styling */
+.order {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #5C8692;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.order a {
+    text-decoration: none;
+    color: white;
+}
+
+.order:hover {
+    background-color: #4a6e78;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .content {
+        font-size: 40px;
+    }
+
+    .content_text {
+        font-size: 16px;
+    }
+
+    .banner_text {
+        font-size: 28px;
+    }
+
+    .order {
+        font-size: 13px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-overlay {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .info {
+        max-width: 90%; /* Increase text container width */
+    }
+
+    .content {
+        font-size: 32px;
+    }
+
+    .content_text {
+        font-size: 15px;
+    }
+
+    .banner_text {
+        font-size: 24px;
+    }
+
+    .order {
+        font-size: 12px;
+        padding: 8px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-overlay {
+        padding: 10px; /* Further reduced padding for mobile */
+    }
+
+    .content {
+        font-size: 28px;
+    }
+
+    .content_text {
+        font-size: 14px;
+    }
+
+    .banner_text {
+        font-size: 20px;
+    }
+
+    .order {
+        font-size: 11px;
+        padding: 6px 14px;
+    }
+}

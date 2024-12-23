@@ -1,0 +1,47 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh; /* Ensures the error page covers the full viewport height */
+    background-color: #f4f4f9; /* Default background color (optional) */
+}
+
+/* Error Content Wrapper */
+.error-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh; /* Make the content take up the full viewport height */
+    background: url('/img/404.jpg') no-repeat center center fixed; /* Full-screen image */
+    background-size: cover; /* Ensure the image covers the entire page */
+    color: #ffffff; /* Text color to contrast with the image */
+}
+
+/* Styling the Error Heading */
+.error-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffffff; /* Ensure the text is readable on the background */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text shadow for readability */
+}
+
+/* Hide the image tag (optional, since background image is used) */
+.error-image {
+    display: none; /* We don't need the <img> tag if the background image is used */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .error-content h1 {
+        font-size: 36px; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .error-content h1 {
+        font-size: 28px;
+    }
+}

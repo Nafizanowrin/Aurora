@@ -1,0 +1,121 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Manrope", sans-serif;
+}
+
+/* Logo Styling */
+.nav_left .logo img {
+  height: 60px;
+  width: auto;
+}
+
+.nav_right {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 0;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.nav-item {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #020202;
+  padding: 10px 20px;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s;
+}
+
+.nav-item:hover {
+  background-color: transparent;
+  color: #333;
+  border: 2px solid #f7d3e8;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.cart-icon {
+  font-size: 20px;
+  color: #555;
+}
+
+.cart-icon:hover {
+  color: #470e0e;
+  transform: scale(1.1);
+}
+
+.profile-icon {
+  font-size: 22px;
+  color: #555;
+  background-color: transparent;
+  /* border: 2px solid #f7d3e8; */
+  border-radius: 50%;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.profile-icon:hover {
+  color: #470e0e;
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+
+/* Medium Screens */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(201, 9, 109, 0.1);
+    z-index: 101;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+/* Small Screens */
+@media (max-width: 480px) {
+  .logo img {
+    height: 50px;
+  }
+
+  .nav-item {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+}
+

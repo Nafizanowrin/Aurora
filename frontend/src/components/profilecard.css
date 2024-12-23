@@ -1,0 +1,48 @@
+/* Profile Card Styles */
+.profile-card {
+  width: 400px;
+  height: 350px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #bfd4da;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.profile-header {
+  margin-bottom: 20px;
+}
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  border: 2px solid #5C8692;
+}
+
+.profile-username {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.profile-details {
+  text-align: left;
+  margin-top: 10px;
+}
+
+.profile-details p {
+  margin: 10px 0;
+  font-size: 20px;
+  color: #555;
+}
+
+.profile-details strong {
+  color: #000;
+}

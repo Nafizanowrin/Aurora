@@ -1,0 +1,149 @@
+/* General Section Styling */
+.about {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: space-between; /* Space between left and right sections */
+    padding: 100px 50px; /* Adjust padding */
+    background: linear-gradient(-45deg, #e3fdfd, #ffe6fa, #d4f1f9, #fde2e4);
+    gap: 20px; /* Add spacing between sections */
+    box-sizing: border-box;
+}
+
+/* Right Section */
+.right {
+    flex: 1 1 100%; /* Full width on smaller screens */
+    max-width: 600px;
+    order: 2; /* Move below the image on smaller screens */
+}
+
+/* Left Section */
+.left {
+    flex: 1 1 100%; /* Full width on smaller screens */
+    max-width: 500px;
+    display: flex;
+    justify-content: center; /* Center the image on smaller screens */
+    order: 1; /* Move above the text on smaller screens */
+}
+
+.photo {
+    max-width: 100%; /* Ensure the image scales properly */
+    height: auto;
+    border-radius: 10px; /* Optional: Rounded corners for the image */
+}
+
+/* Lifestyle Name */
+.lifestyle_name {
+    text-transform: uppercase;
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    color: #5C8692;
+    margin-bottom: 10px;
+}
+
+/* Lifestyle Text */
+.lifestyle_text {
+    max-width: 100%;
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #141414;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.lifestyle_longtext {
+    font-family: 'Manrope', sans-serif;
+    color: #555555;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 14px;
+}
+
+/* Card Section */
+.card_items {
+    display: flex;
+    justify-content: space-between; /* Spread cards evenly */
+    gap: 12px; /* Space between cards */
+    margin-top: 30px;
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+}
+
+.card_item {
+    border: 2px solid #1E2C30;
+    text-align: center;
+    padding: 20px;
+    flex: 1 1 calc(33.33% - 12px); /* Three cards per row */
+    box-sizing: border-box;
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+.card_item_text {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: #141414;
+    margin-top: 10px;
+}
+
+.card_item_photo {
+    width: 58px;
+    height: 64px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column; /* Stack sections vertically */
+        padding: 50px 20px; /* Reduce padding for smaller screens */
+    }
+
+    .right {
+        order: 2; /* Ensure text stays below the image */
+    }
+
+    .left {
+        order: 1; /* Ensure the image stays above the text */
+    }
+
+    .lifestyle_text {
+        font-size: 28px;
+    }
+
+    .lifestyle_longtext {
+        font-size: 14px;
+    }
+
+    .card_items {
+        gap: 10px; /* Reduced spacing between cards */
+    }
+
+    .card_item {
+        flex: 1 1 calc(50% - 10px); /* Two cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .about {
+        padding: 30px 10px; /* Further reduced padding */
+    }
+
+    .lifestyle_text {
+        font-size: 24px;
+    }
+
+    .lifestyle_longtext {
+        font-size: 12px;
+    }
+
+    .card_item {
+        flex: 1 1 100%; /* One card per row on very small screens */
+        margin: 10px 0; /* Add spacing between rows */
+    }
+
+    .card_item_photo {
+        width: 50px;
+        height: 55px;
+    }
+
+    .card_item_text {
+        font-size: 18px;
+    }
+}

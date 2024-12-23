@@ -1,0 +1,86 @@
+/* Overlay for the modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal Container */
+.modal {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 90%; /* Adjust width for smaller screens */
+    max-width: 400px; /* Set a max width for larger screens */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons Container */
+.modal-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    gap: 15px; /* Add gap between buttons for better spacing */
+}
+
+/* Button Styling */
+.modal-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(189, 43, 43);
+    color: #f0f0f0;
+    font-size: 1rem;
+    font-family: 'Manrope', sans-serif;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.modal-buttons button:hover {
+    background-color: rgb(159, 33, 33);
+    transform: translateY(-2px);
+}
+
+.modal-buttons button:active {
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Adjust modal width */
+    .modal {
+        width: 95%; /* Increase width for smaller devices */
+        padding: 15px; /* Reduce padding */
+    }
+
+    /* Adjust button size */
+    .modal-buttons button {
+        font-size: 0.9rem; /* Smaller text size */
+        padding: 8px 15px; /* Smaller padding */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Additional adjustments for very small screens */
+    .modal {
+        padding: 10px; /* Minimal padding */
+    }
+
+    .modal-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 10px; /* Add spacing between buttons */
+    }
+
+    .modal-buttons button {
+        width: 100%; /* Full-width buttons for small screens */
+        font-size: 0.85rem; /* Reduce font size */
+    }
+}
