@@ -1,1 +1,1 @@
-<h1>Aurora 🌸</h1>
+<h1>Aurora</h1>
