@@ -26,19 +26,19 @@
 </p>
 <h1>Project Architecture</h1>
 <p>Aurora/ <br>
-├── frontend/                # Contains React frontend code <br>
-│   ├── src/ <br>
-│   │   ├── components/      # Reusable components (Nav, Footer, etc.) <br>
-│   │   ├── pages/           # Pages like Home, Products, Services <br>
-│   │   ├── store/           # Auth and state management <br>
-│   │   └── App.js           # Main app entry point <br>
-│   └── public/              # Public assets (images, favicon) <br>
-├── backend/                 # Contains backend server code <br>
-│   ├── models/              # MongoDB models for users, services, etc. <br>
-│   ├── routes/              # Express.js routes for API <br>
-│   ├── controllers/         # Business logic for API endpoints <br>
-│   └── server.js            # Main backend entry point <br>
-└── README.md                # Project documentation <br>
+├── frontend/                 <br>
+│   ├── src/                  <br>
+│   │   ├── components/       <br>
+│   │   ├── pages/            <br>
+│   │   ├── store/            <br>
+│   │   └── App.js            <br>
+│   └── public/               <br>
+├── backend/                  <br>
+│   ├── models/               <br>
+│   ├── routes/               <br>
+│   ├── controllers/          <br>
+│   └── server.js             <br>
+└── README.md                 <br>
 </p>
 <h1>Getting Started</h1>
 <p>Follow these steps to set up and run Aurora locally: <br>
