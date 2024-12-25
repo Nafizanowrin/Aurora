@@ -1,7 +1,7 @@
 <h1>Aurora</h1>
 <p>Aurora is a web management system for salons designed to enhance client satisfaction. It offers features like online bookings, package selections, and the ability to buy products online. This project is built using the MERN stack, which includes MongoDB, Express.js, React.js, and Node.js. It is known for its user-friendly interface and excellent performance for both customers and administrators.</p>
 <br>
-<h3>Click the Link: https://salonaurora.netlify.app</h3>
+<h3>Click the Link: https://salonaurora.netlify.app/</h3>
 <br>
 <h1>Features</h1>
 <p>1. User Features: <br>
